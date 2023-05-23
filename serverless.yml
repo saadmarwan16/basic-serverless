@@ -9,7 +9,7 @@ provider:
 
   environment:
     STAGE: ${env:STAGE}
-    FUNCTION: ${env:FUNCTION}
+    # FUNCTION: ${env:FUNCTION}
 
 functions:
   api:
