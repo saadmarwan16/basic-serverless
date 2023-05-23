@@ -23,6 +23,7 @@ jobs:
 
   production-build:
     name: production-build
+    environment: Production
     needs: create-envfile
     runs-on: ubuntu-latest
     strategy:
