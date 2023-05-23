@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "ci": "yarn install --frozen-lockfile",
     "sls:local": "sls offline -s dev --reloadHandler"
   },
   "dependencies": {
