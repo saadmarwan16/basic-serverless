@@ -1,0 +1,21 @@
+service: basic-serverless
+frameworkVersion: '3'
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+  environment:
+    STAGE: ${env:STAGE}
+    FUNCTION: ${env:FUNCTION}
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-offline
