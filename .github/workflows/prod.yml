@@ -19,7 +19,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_STAGE: ${{ secrets.STAGE }}
-          file_name: .env.prod
+          file_name: .env
 
   production-build:
     name: production-build
